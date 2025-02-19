@@ -1,0 +1,26 @@
+#playbar-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#startbtn-song{
+    display: flex;
+    position: relative;
+    gap: 1.5vw;
+    align-items: center;
+}
+
+.start-song-btn{
+    width: 2vw;
+    height: 2vw;
+    object-fit: cover;
+}
+#playbar{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+#progress-bar {
+    width: 70%;
+}
