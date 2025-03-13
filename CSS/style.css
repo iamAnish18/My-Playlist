@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +7,8 @@
     font-family: 'Roboto', sans-serif;
 }
 
-html, body {
+html,
+body {
     width: 100%;
     height: 100%;
     background-color: black;
@@ -15,78 +17,54 @@ html, body {
     color: white;
 }
 
-#header nav {
-    width: 100%;
+#navflex {
+    padding: 0vw 5vw 0vw 5vw;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    height: 10vh;
-    background-color: black;
-    padding: 0 2vw;
 }
 
-#home img {
-    width: 3vw;
-    height: 3vw;
-    border-radius: 50%;
-    padding: 0.5vw;
-}
-
-#home {
-    display: flex;
-    align-items: center;
-    gap: 1vw;
-}
-
-#input {
-    display: flex;
-    align-items: center;
-    background-color: #202020;
-    border-radius: 2vw;
-    overflow: hidden;
-}
-
-#input img {
-    width: 2vw;
-    height: 2vw;
-    padding: 0.5vw;
-}
-
-#input input {
-    width: 25vw;
-    height: 2.5vw;
+.me-2 {
+    width: 50vw;
+    background-color: gray;
     border: none;
-    background-color: #202020;
     color: white;
-    padding: 0.5vw;
 }
 
-#login-signin {
-    display: flex;
-    align-items: center;
-    gap: 2vw;
-    padding-right: 2vw;
-}
-
-#colour {
+.btn{
     background-color: white;
     color: black;
-    padding: 0.5vw 1vw;
-    border-radius: 1.5vw;
-    transition: background-color 0.3s, color 0.3s;
+    border: none;
 }
 
-#colour:hover {
-    background-color: transparent;
+.btn:hover{
+    background-color: gray;
+    color: white;
+    transition: all ease-in 0.3s;
+}
+.bg-body-tertiary {
+    height: 5vw;
+    background-color: black !important;
+}
+.navbar-brand{
     color: white;
 }
 
-#hover {
-    color: grey;
-    transition: color 0.3s;
+.logoimg{
+    width: 5vw;
+    border-radius: 50%;
 }
 
-#hover:hover {
-    color: white;
-}   
+@media (max-width:600px) {
+    .navbar-brand {
+        display: none;
+    }
+
+    .me-2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 74vw;
+        height: 10vw;
+    }
+}
