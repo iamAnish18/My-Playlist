@@ -4,7 +4,6 @@
     flex-wrap: nowrap;
     position: relative;
     justify-content: space-between;
-    padding-top: 10vh;
     /* padding-bottom: 10vh; To avoid overlap with playbutton */
 }
 
